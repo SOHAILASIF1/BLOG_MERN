@@ -1,0 +1,48 @@
+# Node.js dependencies
+/node_modules
+/backend/node_modules
+/frontend/node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build files
+/frontend/build
+/backend/build
+
+# Environment variables
+.env
+/backend/.env
+/frontend/.env
+
+# Database files
+*.sqlite
+*.sqlite3
+*.mongo
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE settings
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Mac OS metadata
+*.DS_Store
+
+# Cache and miscellaneous files
+*.cache
+.tmp/
+*.swp
+
+# Production files
+/backend/dist
+/frontend/dist
+/backend/public
+/frontend/public
