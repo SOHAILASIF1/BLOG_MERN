@@ -20,7 +20,7 @@ export const signupUser=async(req,res)=>{
             email
         })
         await createUser.save() 
-        res.status(200).json({
+        return res.status(200).json({
             success:true,
             user:{
                 _id:createUser._id,

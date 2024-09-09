@@ -31,6 +31,7 @@ function Login() {
 
       const data = await res.json();
       console.log(data);
+      localStorage.setItem("Users",JSON.stringify(data))
 
       navigate("/");
 
