@@ -45,13 +45,13 @@ function Signup() {
             <h2>Sign UP</h2>
             <br/>
             <form onSubmit={handleSubmit}> 
-            <input type="text" name="" id="" value={userName} onChange={(e)=>setUsername(e.target.value)} />
+            <input  className='input' type="text" name="" id="" value={userName} onChange={(e)=>setUsername(e.target.value)} />
             <br/>
-            <input type="email" name="" id="" value={email} onChange={(e)=>setEmail(e.target.value)} />
+            <input  className='input' type="email" name="" id="" value={email} onChange={(e)=>setEmail(e.target.value)} />
             <br/>
-            <input type="password" value={password} onChange={(e)=>setPassword(e.target.value)} />
+            <input  className='input' type="password" value={password} onChange={(e)=>setPassword(e.target.value)} />
             <br/><br/>
-            <input type="submit" value="Submit" />
+            <input  type="submit" value="Submit" className='button' />
             </form>
 
         </div>

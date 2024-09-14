@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Login.css'
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -42,7 +43,7 @@ function Login() {
   }
 
   return (
-    <div className='Container'>
+    <div className='container'>
       <div className='box'>
         <h2 className='Login'>LOGIN</h2>
         <br />
@@ -52,6 +53,7 @@ function Login() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
+            className='input'
           />
           <br />
 
@@ -60,10 +62,11 @@ function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Password"
+            className='input'
           />
           <br />
 
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Submit" className='button'/>
         </form>
       </div>
     </div>
